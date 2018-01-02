@@ -1,0 +1,69 @@
+
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+            <button id="toggle">Toggle</button>
+            <button id="fadein">FadeIn</button>
+            <button id="fadeout">FadeOut</button>
+            <button id="fadetoggle">FadeToggle</button>
+            <button id="Name">Name</button>
+            <button id="department">Department</button>
+            <button id="skill">Skill</button>
+        </header>
+        <div class="maincontent">
+            <div class="main">
+                <h3>This is program for show,hide,toggle</h3>
+                <p>
+                    Sir, i am in a really bad financial state as i am unemployed now. I am searching for a job for last couple of months. My family is also expecting financial support from me. It is very common in our country Bangladesh that parents want their son to share financial burden upon completing bachelor degree. In this situation, i am not in a position to provide for my own study. I want to increase my skill in this unemployment period of life and to compete with the rest. This course attracted me a lot and hoping to learn many things from this course. Hopefully this course will help me to get a decent job to provide for myself as well as for my family. That's why, i am applying for financial aid. I have the intention to enroll for other courses with payment upon getting job. 
+                </p>
+            </div>
+            <div>
+            	Name :<input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <p id="Department"><b>Department</b></p>
+            <p id="skill">skill</p>
+
+        </div>
+
+
+        <script type="text/javascript">
+        	
+        	$(document).ready(function(){
+
+        		$("#Name").click(function(){
+
+        			$("name").val("<?php getname(); ?>");
+        		});
+        	});
+
+        </script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $(".main").hide('slow');
+                });
+                $("#show").click(function(){
+                    $(".main").show('slow');
+                });
+                $("#toggle").click(function(){
+                    $(".main").toggle('fast');
+                });
+                $("#fadein").click(function(){
+                    $(".main").fadeIn(2000);
+                });
+                $("#fadeout").click(function(){
+                    $(".main").fadeOut(2000);
+                });
+                $("#fadetoggle").click(function(){
+                    $(".main").fadeToggle(3000);
+                });
+            });
+        </script>
+
+        <footer class="footer">
+            <h3>this is footer</h3>
+        </footer>
+    </section>
+</body>   
+</html>
